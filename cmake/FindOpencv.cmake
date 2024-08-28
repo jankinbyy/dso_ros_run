@@ -1,0 +1,5 @@
+#set(OpenCV_DIR /home/jankin/mylib/opencv_cuda/opencv-3.4.5/opencv_lib/share/OpenCV)
+find_package( OpenCV 3 REQUIRED )
+message("Opencv Version:" ${OpenCV_VERSION})
+include_directories(${OpenCV_INCLUDE_DIRS})
+list(APPEND ALL_TARGET_LIBRARIES ${OpenCV_LIBS})
